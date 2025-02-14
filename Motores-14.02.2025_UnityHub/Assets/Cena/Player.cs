@@ -44,7 +44,7 @@ public class Player : MonoBehaviour
       {
         gameObject.transform.position += new Vector3(-velocidade*Time.deltaTime,0,0);
         //rigidbody2D.AddForce(new Vector2(-velocidade,0));
-        spriteRenderer.flipX = true;
+        spriteRenderer.flipX = false;
         Debug.Log("LeftArrow");
       }
         
@@ -53,7 +53,7 @@ public class Player : MonoBehaviour
       {
         gameObject.transform.position += new Vector3(velocidade*Time.deltaTime,0,0);
         //rigidbody2D.AddForce(new Vector2(velocidade,0));
-         spriteRenderer.flipX = false;
+         spriteRenderer.flipX = true;
          Debug.Log("RightArrow");
       }
 
